@@ -4,7 +4,7 @@
 }
 .container{
     height: 100vh;
-    background: red;
+    background: linear-gradient(to right,black,rgb(236, 8, 187),black);
     font-family: 'Abril Fatface', cursive;
     /*background: linear-gradient(to right,black,skyblue,black);*/
 }
@@ -140,4 +140,5 @@
       outline: none;
       border-radius: 5px;
       box-shadow: 5px 5px 10px 5px black;
+      cursor: pointer;
   }
