@@ -10,7 +10,7 @@
           .back{
             width: 100%;
             height: 100vh;
-              background: linear-gradient(to right,black,rgb(236, 8, 187),black);
+            background: linear-gradient(to right,black,rgb(236, 8, 187),black);
           }
     .ml4 {
       font-weight: 900;
@@ -18,7 +18,7 @@
     }
     .ml4 .letters {
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 40%;
       transform: translate(-50%,-50%);
       opacity: 0; 
@@ -31,9 +31,7 @@
             <span class="letters letters-1">Ready</span>
             <span class="letters letters-2">Set</span>
             <span class="letters letters-3">Go!</span>
-            <span class="letters letters-4">Wish You</span>
-            <span class="letters letters-5">Happy</span>
-            <span class="letters letters-6">Birthday</span>
+            <span class="letters letters-4">Wish You <br>Happy <br>Birthday</span>
             <a href="second.html"><button class="letters letters-7">Let's Go</button></a>
           </h1>
       </div>
@@ -92,30 +90,6 @@ anime.timeline()
     duration: ml4.durationIn
   }).add({
     targets: '.ml4 .letters-4',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-5',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-5',
-    opacity: 0,
-    scale: ml4.scaleOut,
-    duration: ml4.durationOut,
-    easing: "easeInExpo",
-    delay: ml4.delay
-  }).add({
-    targets: '.ml4 .letters-6',
-    opacity: ml4.opacityIn,
-    scale: ml4.scaleIn,
-    duration: ml4.durationIn
-  }).add({
-    targets: '.ml4 .letters-6',
     opacity: 0,
     scale: ml4.scaleOut,
     duration: ml4.durationOut,
