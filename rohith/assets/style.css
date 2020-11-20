@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.container{
+.container-fluid{
     height: 100vh;
     background: linear-gradient(to right,black,rgb(236, 8, 187),black);
     font-family: 'Abril Fatface', cursive;
