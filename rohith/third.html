@@ -2,23 +2,98 @@
 <html>
     <head>
         <title>Happy Birthday</title>
+        <script src="assets/vara.min.js"></script>
     </head>
     <style>
-        body, html {
-  height: 100%;
-}
-
-.bg {
-  background-image: url("5.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("4.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+        #container{
+            width: 50%;
+            margin: 20px auto;
+            min-height: 700px;
+            margin-top: 150px;
+        }
     </style>
     <body>
-        <div class="bg">
-
+        <div id="container">
+            
         </div>
+        <a href="" class="hidden"></a>
+        <script>
+            var fontSize = 72;
+                if(window.screen.width>700)
+                    fontSize=52;
+                else if(window.screen.width<1200)
+                    fontSize=57;
+                var vara=new Vara(
+                    "#container",
+                    "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+                [
+                    {
+                        text:"Hi its Me Senthuran",
+                        y:150,
+                        fromCurrentPosition:{y:false},
+                        duration:3000
+                    },
+                    {
+                        text:"Birthday Website",
+                        y:150,
+                        fromCurrentPosition:{y:false},
+                        delay:3000,
+                        duration:3000
+                    },
+                    {
+                        text:"Birthday Website for rohith",
+                        y:150,
+                        fromCurrentPosition:{y:false},
+                        delay:3000,
+                        duration:4500
+                    },
+                    {
+                        text:"Birthday Website?",
+                        y:150,
+                        fromCurrentPosition:{y:false},
+                        delay:3000,
+                        duration:1000
+                    },
+                    {
+                        text:"Oru Website create pannanum?",
+                        y:150,
+                        fromCurrentPosition:{y:false},
+                        delay:3000,
+                        duration:4000
+                    },
+                ],
+                {
+                    strokeWidth:2,
+                    color:"#fff",
+                    fontSize:fontSize,
+                    textAlign:"center"
+                }
+                );
+
+                vara.ready(function(){
+                    var erase=true;
+                    vara.animationEnd(function(i,o){
+                        if(i=="no_erase") erase=false;
+                        if(erase){
+                            o.container.style.transition="opacity 1s 1s";
+                            o.container.style.opacity=0;
+                        }
+                    });
+
+                });
+
+        </script>
     </body>
 </html>
