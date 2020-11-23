@@ -7,11 +7,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <style>
-          .back{
+          body, html {
             width: 100%;
-            height: 100vh;
-            background: linear-gradient(to right,black,rgb(236, 8, 187),black);
-          }
+            height: 100%;
+}
+
+.bg {
+  background-image: url("1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
     .ml4 {
       font-weight: 900;
       font-size: 5.5em;
@@ -25,13 +32,13 @@
     }
     </style>
     </head>
-    <body>
+    <body class="bg">
       <div class="back">
         <h1 class="ml4">
             <span class="letters letters-1">Ready</span>
             <span class="letters letters-2">Set</span>
             <span class="letters letters-3">Go!</span>
-            <span class="letters letters-4" style="color: deepskyblue;">Wish You <br>Happy <br>Birthday</span>
+            <span class="letters letters-4" style="color: rgb(9, 14, 94);">Wish You <br>Happy <br>Birthday</span>
             <img class="letters letters-7" style="border-radius: 40%;border: 5px solid white;" src="assets/image/1.jpg">
             <a href="second.html" class="letters letters-7" style="color: black;position: absolute;left: 40%;top: 30%;transform: translate(-50%,-50%);">Let's Go  =></a>
           </h1>
