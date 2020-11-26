@@ -5,7 +5,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <link rel="stylesheet" href="assets/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--<meta http-equiv="refresh" content="30">-->
         <style>
           body, html {
             width: 100%;
@@ -22,6 +26,7 @@
     .ml4 {
       font-weight: 900;
       font-size: 5.5em;
+      font-family: 'Sansita Swashed', cursive;
     }
     .ml4 .letters {
       position: absolute;
@@ -30,17 +35,122 @@
       transform: translate(-50%,-50%);
       opacity: 0; 
     }
+    .lett{
+      font-size: 30px;
+      opacity: 0;
+    }
+    button{
+      width: 100px;
+      height: 70px;
+      font-size: 30px;
+      background-color: transparent;
+      box-shadow: 5px 5px 5px black;
+      border-radius: 3px;
+      font-family: 'Sansita Swashed', cursive;
+      cursor: pointer;
+      padding: 10px 10px;
+    }
+    button:hover{
+      transform: scale(1.5);
+      background-color: cyan;
+    }
+    a{
+      color: rgb(3, 22, 105);
+    }
+    a:hover{
+      transform: scale(1.1);
+      color: cyan;
+    }
+    span{
+      font-family: 'Sansita Swashed', cursive;
+      color: black;
+    }
     </style>
     </head>
     <body class="bg">
-      <div class="back">
+      <div class="container-fluid">
         <h1 class="ml4">
             <span class="letters letters-1">Ready</span>
             <span class="letters letters-2">Set</span>
             <span class="letters letters-3">Go!</span>
             <span class="letters letters-4" style="color: rgb(9, 14, 94);">Wish You <br>Happy <br>Birthday</span>
-            <img class="letters letters-7" style="border-radius: 40%;border: 5px solid white;" src="assets/image/1.jpg">
-            <a href="second.html" class="letters letters-7" style="color: black;position: absolute;left: 40%;top: 30%;transform: translate(-50%,-50%);text-align: center;cursor: pointer;font-family: 'Abril Fatface', cursive;font-size: 35px;">Let's Go  =></a>
+            <div class="row" style="margin-left: 150px;padding-bottom: 20px;">
+              <h1 class="lett letters-7" style="text-align: center;color: darkblue;font-size: 50px;padding-bottom: 30px;">Our Collections</h1>
+              <div class="col-sm-4 lett letters-7">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>1-5 age photo</h1> 
+                    <p>some text</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="col-sm-4 lett letters-7"><div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>6-10 age photo</h1> 
+                    <p>some text</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="col-sm-4 lett letters-7"><div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>11-15 age photo</h1> 
+                    <p>some text</p>
+                  </div>
+                </div>
+              </div></div>
+            </div>
+            <div class="row" style="margin-left: 150px;">
+              <div class="col-sm-4 lett letters-7"><div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Clg 1st year photo</h1> 
+                    <p>some text</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="col-sm-4 lett letters-7"><div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>2nd year photo</h1> 
+                    <p>some text</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="col-sm-4 lett letters-7">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/image/2.jpg" alt="Avatar" style="width:250px;height:250px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>3rd year photo</h1> 
+                    <p>some text</p> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="row lett letters-7" style="margin-left: 50%;padding-top: 20px;">
+              <a href="second.html">Let's Go</a>
+            </div>
           </h1>
       </div>
     </body>
